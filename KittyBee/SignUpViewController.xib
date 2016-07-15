@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham Medium Regular.ttf">
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+            <string>GothamMedium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController">
+            <connections>
+                <outlet property="btnCouplePic" destination="F2d-xi-JKO" id="l1c-Jx-Mwj"/>
+                <outlet property="btnDOA" destination="laa-8y-fxX" id="Sjz-Vc-xNv"/>
+                <outlet property="btnDOB" destination="Abz-bU-kXx" id="GYT-4U-mac"/>
+                <outlet property="btnFamilyPic" destination="Pam-yX-8AC" id="xKM-TV-9Tf"/>
+                <outlet property="btnProfilePic" destination="Pna-Wi-93f" id="kNr-Rr-7A1"/>
+                <outlet property="btnSignUp" destination="t1c-0m-SIa" id="kre-6x-rNX"/>
+                <outlet property="scrollView" destination="TaC-R2-DB3" id="Iym-H5-tgW"/>
+                <outlet property="txtAddress" destination="q5l-Cf-6ps" id="jxd-Q5-KNj"/>
+                <outlet property="txtCity" destination="KwZ-bc-Epn" id="TXC-D0-SAL"/>
+                <outlet property="txtDateOfAniversary" destination="O2J-8J-EFo" id="qXm-q7-VB0"/>
+                <outlet property="txtDateOfBirth" destination="TxX-ht-c1R" id="X3l-i2-TkM"/>
+                <outlet property="txtEmail" destination="HGP-gr-z7Y" id="pHa-sA-OPF"/>
+                <outlet property="txtName" destination="TWv-R9-dON" id="uIH-8r-1ke"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="Dzg-2H-6nL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="TaC-R2-DB3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City*" textAlignment="natural" minimumFontSize="17" id="KwZ-bc-Epn">
+                            <rect key="frame" x="32" y="93" width="256" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="2fi-7z-sMq"/>
+                            </connections>
+                        </textField>
+                        <view alpha="0.5" contentMode="scaleToFill" id="Kin-6z-C99">
+                            <rect key="frame" x="32" y="77" width="256" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view alpha="0.5" contentMode="scaleToFill" id="dRR-5D-ElK">
+                            <rect key="frame" x="32" y="122" width="256" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="HGP-gr-z7Y">
+                            <rect key="frame" x="32" y="241" width="256" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="RU8-Yc-Sqv"/>
+                            </connections>
+                        </textField>
+                        <view alpha="0.5" contentMode="scaleToFill" id="ccE-3d-5mO">
+                            <rect key="frame" x="32" y="270" width="256" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view alpha="0.5" contentMode="scaleToFill" id="wxb-VV-bs7">
+                            <rect key="frame" x="32" y="316" width="256" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view alpha="0.5" contentMode="scaleToFill" id="1Tu-IP-8kY">
+                            <rect key="frame" x="32" y="362" width="256" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view alpha="0.5" contentMode="scaleToFill" id="uRL-3C-kws">
+                            <rect key="frame" x="32" y="408" width="256" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name*" textAlignment="natural" minimumFontSize="17" id="TWv-R9-dON">
+                            <rect key="frame" x="32" y="47" width="256" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="FF9-cY-pdB"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Pna-Wi-93f">
+                            <rect key="frame" x="32" y="138" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="upload_imgSingUp"/>
+                            <connections>
+                                <action selector="cmdProfilePic:" destination="-1" eventType="touchUpInside" id="2Mk-Wk-Pde"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Pam-yX-8AC">
+                            <rect key="frame" x="135" y="138" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="upload_imgSingUp"/>
+                            <connections>
+                                <action selector="cmdFamilyPic:" destination="-1" eventType="touchUpInside" id="Vvh-Fz-p44"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F2d-xi-JKO">
+                            <rect key="frame" x="238" y="138" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="upload_imgSingUp"/>
+                            <connections>
+                                <action selector="cmdCouplePic:" destination="-1" eventType="touchUpInside" id="8YL-f2-Yf5"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Pic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lcv-gZ-Yik">
+                            <rect key="frame" x="32" y="204" width="77" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="14"/>
+                            <color key="textColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Couple Pic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YGo-dj-Ffz">
+                            <rect key="frame" x="223" y="204" width="81" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                            <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="14"/>
+                            <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family Pic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wQ2-xN-eAj">
+                            <rect key="frame" x="129" y="204" width="78" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="14"/>
+                            <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date Of Birth" textAlignment="natural" minimumFontSize="17" id="TxX-ht-c1R">
+                            <rect key="frame" x="32" y="333" width="256" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="WKr-9p-Roo"/>
+                            </connections>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendarBlack" id="Imd-St-top">
+                            <rect key="frame" x="258" y="333" width="24" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t1c-0m-SIa">
+                            <rect key="frame" x="24" y="476" width="272" height="36"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="16"/>
+                            <state key="normal" title="SIGN UP">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cmdSignUp:" destination="-1" eventType="touchUpInside" id="tDf-e8-AVO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e7E-Fy-pvA">
+                            <rect key="frame" x="24" y="528" width="272" height="36"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="facebook">
+                                <color key="titleColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cmdFacebook:" destination="-1" eventType="touchUpInside" id="cMU-qw-LZL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cz4-zX-fSW">
+                            <rect key="frame" x="24" y="580" width="272" height="36"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="google_plus">
+                                <color key="titleColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cmdGooglePlus:" destination="-1" eventType="touchUpInside" id="hf1-vI-ojt"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IBk-5L-FZF">
+                            <rect key="frame" x="32" y="425" width="256" height="35"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <attributedString key="attributedText">
+                                <fragment content="By clicking Sign Up, you agree to our Terms and that you have read our Data Policy.">
+                                    <attributes>
+                                        <color key="NSColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="11" name="GothamMedium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" maximumLineHeight="14" lineHeightMultiple="2" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date Of Aniversary" textAlignment="natural" minimumFontSize="17" id="O2J-8J-EFo">
+                            <rect key="frame" x="32" y="379" width="256" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="nJ1-D9-3uq"/>
+                            </connections>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendarBlack" id="xGL-1c-tbK">
+                            <rect key="frame" x="258" y="379" width="24" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Abz-bU-kXx">
+                            <rect key="frame" x="32" y="325" width="256" height="39"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="cmdDOB:" destination="-1" eventType="touchUpInside" id="CbP-kF-jmu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="laa-8y-fxX">
+                            <rect key="frame" x="32" y="374" width="256" height="39"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="cmdDOA:" destination="-1" eventType="touchUpInside" id="xQo-RN-Vvm"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" id="q5l-Cf-6ps">
+                            <rect key="frame" x="32" y="287" width="256" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GothamMedium" family="Gotham Medium" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="MGe-xi-nUr"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="C14-Pu-u31"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="416" y="378"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="320" height="569"/>
+        <image name="calendarBlack" width="24" height="24"/>
+        <image name="facebook" width="272" height="36"/>
+        <image name="google_plus" width="273" height="36"/>
+        <image name="upload_imgSingUp" width="35" height="35"/>
+    </resources>
+</document>

@@ -1,0 +1,96 @@
+//
+//  PrefixHeader.pch
+//  KittyBee
+//
+//  Created by ONE WORLD TECHNOLOGIES on 31/03/16.
+//  Copyright © 2016 ONE WORLD TECHNOLOGIES. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//    **********************
+//NS User Default Used in app
+// USERID
+//deviceTokenStrKey
+//StoreContactArtical
+//StoreContactData
+//USERID
+//UserName
+//profilePic
+//phone
+//status
+//GroupCreated
+//GroupDiaries
+
+//    **********************************
+#endif /* PrefixHeader_pch */
+
+#import "AFNetworking.h"
+#import "ApiClient.h"
+#import "IndecatorView.h"
+#import "AsyncImageView.h"
+#import "BaseViewController.h"
+#import "Base64.h"
+#import "AlertView.h"
+#import "Reachability.h"
+
+
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <Quickblox/Quickblox.h>
+#import <Quickblox/QBMulticastDelegate.h>
+#import "QMServices.h"
+#import "Constants.h"
+
+#define SCREEN_SIZE [[UIScreen mainScreen] bounds].size
+
+//#define BASEURl "http://sandbox.oneworldtechnologies.com/owt-development/kittybee/api/"
+#define BASEURl "http://booleanventura.com/sandbox/api/"
+
+#define EDITPROFILE         BASEURl "editProfile/"
+#define PROFILE             BASEURl "profile?id="
+#define GETARTICLE          BASEURl "getArticle"
+#define MOBNUM              BASEURl "start"
+#define OTP                 BASEURl "otp"
+#define REGISTER            BASEURl "register"
+#define FBREGISTER          BASEURl "fbLogin"
+#define GMAILREGISTER       BASEURl "gmailLogin"
+#define ADDCONTACT          BASEURl "contact/"
+#define INVITE              BASEURl "invite"
+#define PERMOTIONALLISTING  BASEURl "promotion/"
+#define ADDGROUP            BASEURl "addGroup/"
+#define GETGROUP            BASEURl "getGroup/"
+#define ADDNOTES            BASEURl "addNote"
+#define GETNOTES            BASEURl "notes"
+#define DELETENOTES         BASEURl "deleteNote/"
+#define GETRULES            BASEURl "getRule/"
+#define UPDATERULES         BASEURl "editRule/"
+#define GETVENUE            BASEURl "getVenue/"
+#define SETVENUE            BASEURl "addVenue"
+#define UPDATEVENUE         BASEURl "editVenue/"
+#define DIARIES             BASEURl "dairies/"
+#define SUBMITDIARIES       BASEURl "addDairies"
+#define HOSTLIST            BASEURl "hostList/"
+#define SELECTHOST          BASEURl "selectHost/"
+#define CALANDER            BASEURl "calander/"
+#define BANNAR              BASEURl "banner"
+#define ADDBILL             BASEURl "addBill"
+#define EDITBILL            BASEURl "editBill"
+#define GETBILL             BASEURl "getBill"
+#define SETTING             BASEURl "setting/"
+#define UPDATEGROUPIMAGE    BASEURl "settingUpdate/"
+#define ADDQBDATA           BASEURl "singleChat"
+#define NOTIFICATION        BASEURl "getNotification/"
+#define DELETENOTIFICATION  BASEURl "deleteNotification"
+#define ADDATTANDANCE       BASEURl "addAttendance"
+#define GETATTANDANCE       BASEURl "getAttendance"
+#define ADDMEMBER           BASEURl "addMemberList"
+#define ADDSELECTEDMEMBER   BASEURl "addMember"
+#define GIVERIGHTTOEDIT     BASEURl "giveRight"
+#define DELETEGROUP         BASEURl "deleteGroup/"
+#define DELETEMEMBER        BASEURl "deleteMember"
+#define GETNONKITTYMEMBER   BASEURl "getMember/"
